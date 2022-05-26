@@ -1,5 +1,3 @@
-## Lab Overview
-
 TBD
 
 TF Serving is deployed as a Kubernetes Deployment and exposed as a Kubernetes Service. 
