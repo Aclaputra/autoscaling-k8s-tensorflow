@@ -52,7 +52,11 @@ kubectl get nodes
 
 Notice that the cluster has only one node.
 
-
+## Create new bucket.
+```
+export MODEL_BUCKET=${PROJECT_ID}-bucket
+gsutil mb gs://${MODEL_BUCKET}
+```
 
 
 ## Deploying a model.
