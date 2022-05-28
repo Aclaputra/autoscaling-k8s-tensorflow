@@ -52,7 +52,15 @@ kubectl get nodes
 
 Notice that the cluster has only one node.
 
-
+## Create new bucket.
+```
+export MODEL_BUCKET=${PROJECT_ID}-bucket
+gsutil mb gs://${MODEL_BUCKET}
+```
+After the bucket has been created copy the model files:
+```
+gsutil cp -r gs://workshop-datasets/models/resnet_101 gs://${MODEL_BUCKET}
+```
 
 
 ## Deploying a model.
